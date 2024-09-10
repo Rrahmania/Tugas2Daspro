@@ -1,0 +1,17 @@
+Program namabulan;
+uses crt;
+begin
+    clrscr;
+    writeln('januari');
+    writeln('febuari');
+    writeln('maret');
+    writeln('april');
+    writeln('mei');
+    writeln('juni');
+    writeln('juli');
+    writeln('agustus');
+    writeln('september');
+    writeln('oktober');
+    writeln('noveber');
+    writeln('desember');
+end.
