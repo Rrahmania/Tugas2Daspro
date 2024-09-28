@@ -1,0 +1,18 @@
+program tampilkandiskon;
+uses crt;
+var
+totalbelanja: real;
+begin
+clrscr;
+write('Masukkan total belanja: Rp ');
+readln(totalBelanja);
+
+if totalbelanja < 100000 then
+    writeln('Tidak ada diskon.')
+else if (totalbelanja >= 100000) and (totalBelanja <= 499999) then
+    writeln('Diskon 10%.')
+else if (totalbelanja >= 500000) and (totalBelanja <= 999999) then
+    writeln('Diskon 20%.')
+else
+    writeln('Diskon 30%');
+end.
