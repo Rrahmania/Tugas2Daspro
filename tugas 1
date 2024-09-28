@@ -5,7 +5,7 @@ totalbelanja: real;
 begin
 clrscr;
 write('Masukkan total belanja: Rp ');
-readln(totalBelanja);
+readln(totalbelanja);
 
 if totalbelanja < 100000 then
     writeln('Tidak ada diskon.')
