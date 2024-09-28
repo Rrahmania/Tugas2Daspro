@@ -14,5 +14,5 @@ else if (totalbelanja >= 100000) and (totalBelanja <= 499999) then
 else if (totalbelanja >= 500000) and (totalBelanja <= 999999) then
     writeln('Diskon 20%.')
 else
-    writeln('Diskon 30%');
+    writeln('Diskon 30%.');
 end.
