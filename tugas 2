@@ -1,0 +1,28 @@
+program ramalan;
+uses crt;
+var suhu:integer;
+begin
+    clrscr;
+    write('masukan suhu (c) : ');
+    readln(suhu);
+    if (suhu <0) then 
+    begin
+    writeln('cuaca sangat dingin,jangan lupa pakai jeket!')
+    end
+    else if (suhu >=0) and (suhu <=15) then
+    begin
+    writeln('cuaca dingin, pakai jeket ya!')
+    end
+    else if (suhu >=16) and (suhu <=25) then
+    begin
+    writeln('cuaca nyaman, cocok untuk jalan jalan')
+    end
+    else if (suhu >=26) and (suhu <=35) then
+    begin
+    writeln('cuaca hangat, tetap terhidrasi')
+    end
+    else
+    begin
+    writeln ('cuaca sangat panas, hindari sinar matahari langsung');
+    end;
+end.
