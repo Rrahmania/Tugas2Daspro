@@ -1,0 +1,40 @@
+program suhu;
+uses crt;
+var angka1,angka2, hasil: real;
+    konversi : integer;
+begin
+    clrscr;
+    writeln('pilih konversi suhu.');
+    writeln('1. celcius ke farenheit');
+    writeln('2. farenheit ke celcius');
+    writeln('3. celcius ke kelvin');
+    writeln('4. kelvin ke celcius');
+    write('Masukkan pilihan Konversi suhu (1-4): ');
+    readln(konversi);
+
+    write('masukan angka pertama :');
+    readln(angka1);
+    write('masukan angka kedua :'); {ini tidak error}
+    readln(angka2);
+
+    case konversi of
+    1: begin
+    hasil := angka1*1.8 + 32;
+    writeln('hasil celcius ke farenheit: ',hasil);
+    end;
+    2: begin
+    hasil := (angka1 - 32) * 0.55;
+        writeln('hasil farenheit ke celcius: ',hasil);
+    end;
+    3: begin
+    hasil:= angka1 + 273;
+        writeln('hasil celcius ke kelvin : ',hasil); {disini tida eror}
+    end;
+    4: begin
+        hasil := angka2 + 273.15;
+        writeln('hasil dari kelvin ke celcius : ', hasil);
+        end
+        else
+        writeln('nothing');
+    end;
+end.
